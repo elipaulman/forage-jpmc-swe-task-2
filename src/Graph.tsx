@@ -44,8 +44,6 @@ class Graph extends Component<IProps, {}> {
       this.table = window.perspective.worker().table(schema);
     }
     if (this.table) {
-      // Load the `table` in the `<perspective-viewer>` DOM reference.
-
       // Add more Perspective configurations here.
       elem.load(this.table);
       elem.setAttribute('view', 'y_line');
